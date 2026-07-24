@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - SmartCare</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a href="../index.html" class="logo">SmartCare</a>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="appointment.html">Appointments</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="form-page">
+      <div class="container">
+        <div class="form-card">
+          <h2>Create Account</h2>
+          <div id="message-box" class="message"></div>
+          <form id="register-form">
+            <label>Full Name</label>
+            <input id="register-name" type="text" placeholder="Enter your name" required />
+            <label>Email</label>
+            <input id="register-email" type="email" placeholder="Enter your email" required />
+            <label>Phone</label>
+            <input id="register-phone" type="text" placeholder="Enter phone number" />
+            <label>Password</label>
+            <input id="register-password" type="password" placeholder="Create password" required />
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+  </body>
+</html>

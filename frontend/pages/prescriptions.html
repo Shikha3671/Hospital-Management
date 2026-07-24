@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prescriptions - SmartCare</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a href="../index.html" class="logo">SmartCare</a>
+        <nav class="nav-links">
+          <a href="doctor-dashboard.html">Dashboard</a>
+          <a href="prescriptions.html">Prescriptions</a>
+          <a href="appointment.html">Appointments</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="form-page">
+      <div class="container">
+        <div class="form-card">
+          <h2>Create Prescription</h2>
+          <div id="message-box" class="message"></div>
+          <form id="prescription-form">
+            <label>Appointment ID</label>
+            <input id="appointment-id" type="number" required />
+            <label>Doctor ID</label>
+            <input id="doctor-id" type="number" required />
+            <label>Patient ID</label>
+            <input id="patient-id" type="number" required />
+            <label>Medication Name</label>
+            <input id="medication-name" type="text" required />
+            <label>Dosage</label>
+            <input id="dosage" type="text" required />
+            <label>Frequency</label>
+            <input id="frequency" type="text" required />
+            <label>Duration (Days)</label>
+            <input id="duration-days" type="number" required />
+            <label>Instructions</label>
+            <textarea id="instructions" rows="4"></textarea>
+            <button type="submit">Save Prescription</button>
+          </form>
+        </div>
+
+        <div class="panel" style="margin-top: 1.2rem;">
+          <h3>Existing Prescriptions</h3>
+          <ul id="prescription-list" class="list"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/prescriptions.js"></script>
+  </body>
+</html>

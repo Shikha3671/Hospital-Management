@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointments - SmartCare</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a href="../index.html" class="logo">SmartCare</a>
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="appointment.html">Appointments</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="form-page">
+      <div class="container">
+        <div class="form-card">
+          <h2>Book Appointment</h2>
+          <div id="message-box" class="message"></div>
+          <form id="appointment-form">
+            <label>Patient ID</label>
+            <input id="patient-id" type="number" placeholder="Enter patient ID" required />
+            <label>Doctor ID</label>
+            <input id="doctor-id" type="number" placeholder="Enter doctor ID" required />
+            <label>Department ID</label>
+            <input id="department-id" type="number" placeholder="Enter department ID" required />
+            <label>Date</label>
+            <input id="appointment-date" type="date" required />
+            <label>Time</label>
+            <input id="appointment-time" type="time" required />
+            <label>Reason</label>
+            <textarea id="appointment-notes" rows="4" placeholder="Describe your concern"></textarea>
+            <button type="submit">Book Appointment</button>
+          </form>
+        </div>
+
+        <div class="panel" style="margin-top: 1.2rem;">
+          <h3>Appointments</h3>
+          <ul id="appointment-list" class="list"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/appointments.js"></script>
+  </body>
+</html>

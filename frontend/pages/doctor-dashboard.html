@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Dashboard - SmartCare</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a href="../index.html" class="logo">SmartCare</a>
+        <nav class="nav-links">
+          <a href="doctor-dashboard.html">Dashboard</a>
+          <a href="doctor-profile.html">Profile</a>
+          <a href="appointment.html">Appointments</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section container">
+      <h2 id="welcome-user">Doctor Dashboard</h2>
+      <button id="logout-btn" class="btn btn-primary" style="margin-bottom: 1rem;">Logout</button>
+      <div id="message-box" class="message"></div>
+      <div class="dashboard-grid">
+        <div class="panel">
+          <h3>Today's Patients</h3>
+          <ul class="list">
+            <li>John Doe - 09:00 AM</li>
+            <li>Emma Brown - 11:30 AM</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Schedule Overview</h3>
+          <ul class="list">
+            <li>3 Consultations Pending</li>
+            <li>2 Records Updated</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>
