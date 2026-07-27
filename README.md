@@ -116,7 +116,7 @@ http://localhost:8000/
 ## API Base URL
 
 ```text
-http://http://3.111.33.46:5001/api
+http://3.111.33.46:5001/api
 ```
 
 ## Notes
