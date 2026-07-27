@@ -81,10 +81,10 @@ npm install
 Update the `.env` file with your MySQL credentials:
 
 ```env
-PORT=5000
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=
+PORT=5001
+DB_HOST=your-rds-endpoint
+DB_USER=your-rds-username
+DB_PASSWORD=your-rds-password
 DB_NAME=smart_hospital
 DB_PORT=3306
 JWT_SECRET=smart_hospital_secret_key
@@ -116,7 +116,7 @@ http://localhost:8000/
 ## API Base URL
 
 ```text
-http://localhost:5000/api
+http://http://3.111.33.46:5001/api
 ```
 
 ## Notes
