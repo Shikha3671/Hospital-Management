@@ -212,11 +212,11 @@ nano .env
 Sample .env:
 
 ```env
-PORT=5000
+PORT=5001
 DB_HOST=your-rds-endpoint.amazonaws.com
 DB_PORT=3306
 DB_USER=admin
-DB_PASSWORD=YourStrongPassword123
+DB_PASSWORD=YourStrongPassword
 DB_NAME=smart_hospital
 JWT_SECRET=your_super_secret_key
 JWT_EXPIRES_IN=7d
@@ -256,7 +256,7 @@ Allow:
 - SSH: port 22 from your IP
 - HTTP: port 80 from 0.0.0.0/0
 - HTTPS: port 443 from 0.0.0.0/0
-- Backend: port 5000 from the Load Balancer or your IP
+- Backend: port 5001 from the Load Balancer or your IP
 
 For RDS, allow MySQL port 3306 from the EC2 Security Group.
 
